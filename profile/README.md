@@ -108,16 +108,17 @@ To create a new Wordbank follow these steps:
 
 ### Populating the new WordBank file
 The new WordBank must have the following structure:
-•	Each category (or subcategory) occupies one row:
+*Each category (or subcategory) occupies one row:
    o	In the first cell goes the number of the category
    o	In the second cell goes the number of the subcategory. __If that row corresponds to a category the number must be the same as the first cell__
    o	In the third cell goes the name of the category.
    o	From the fourth cell onwards go the concepts in this category or subcategory (if there are no concepts in the category or subcategory these cells can be left blank). Each concept must occupy one cell, you can add as many concepts as Excel allows. Concepts can be composed of two words. Be aware that the Scoring tool will look for the exact match of the complete concept.  
-•	The first row of the file has the headers of each column. In column A goes “Category”, column B “Subcategory”, column C “Name”, and column D “Words”. The Scoring tool ignores this first row of the WordBank, then don’t include a category in this row, just leave the headers.
+*The first row of the file has the headers of each column. In column A goes “Category”, column B “Subcategory”, column C “Name”, and column D “Words”. The Scoring tool ignores this first row of the WordBank, then don’t include a category in this row, just leave the headers.
 
 Figure 13 shows the structure of the WordBank that comes by default with the Scoring tool. This WordBank was created for Entrepreneurial Mindset concept maps. 
 
-
-
+|![image](https://user-images.githubusercontent.com/74432387/252468389-e8bd9a60-19bd-4688-ab20-906f89554b02.png)|
+| :-: |
+| Figure 13: WordBank structure|
 
 ## :orange_book: Including a New Codebook
