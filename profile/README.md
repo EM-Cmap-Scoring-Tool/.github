@@ -62,28 +62,22 @@ This method assigns a score based on the number of concepts (NC), the number of 
 NC is the number of concepts that have connections with other concepts in the map; NH are the number of branches (hierarchies) that come from the root concept; HH is the hierarchy (branch) with the largest number of concepts; and NCL are the number of connections between concepts from different hierarchies.
 The formula to get the score based on these metrics is: Score = (NC) + 5*(HH) + 10*(NCL)
 
-Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the identification of the different hierarchies and the highest hierarchy (HH). Figure 7 highlights the crosslink in this concept map. For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
+Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the identification of the different hierarchies and the highest hierarchy (HH). Figure 7 highlights the crosslink in this concept map. For this example, the NC corresponds to 9, NH is 3, HH is hierarchy 2 with 3 levels, and NCL value corresponds to 1.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229846688-053cee04-0534-417b-a71f-7421fccae00b.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229847229-deb70aed-940f-49b2-89c1-6a0e4ce86f47.png)    | ![imagen](https://user-images.githubusercontent.com/78668372/229847398-aec3cc25-ae7f-4eb0-b5ba-2de266ecda3a.png) |
 | :-: | :-: | :-: |
-| Figure 5: EM Cmap example with number of concepts (NC) identification. | Figure 6: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 7: Number of crosslinks (NCL) identification. |
+| Figure 5: EM Cmap example. | Figure 6: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 7: Number of crosslinks (NCL) identification. |
 
 ### Categorical Scoring Method
-The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_2/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
+This method assigns a complexity score (CO) based on the number of concepts (NC), the number of categories that have concepts in it (NCAT), and the number of interlinks between categories (NIL). 
+NC is the number of concepts that have a category assigned from those on the Wordbank file; NCAT is the number of main categories that contains at least one concept; and NIL is the number of connections between concepts of different categories. The Wordbank included by default with the Scoring Tool can be found in [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_2/WordBank.csv).
+The formula to get the complexity score based on these metrics is: CO = NC*(NIL/NCAT) 
+
+Figure 8 shows an example of a concept map with 9 concepts. Figure 9 shows the categories assigned to each concept using a word bank. Figure 10 highlights the interlinks between categories. For this example, NC is 9, NCAT is 3, and NIL value corresponds to 2.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
 | :-: | :-: | :-: |
-| Figure 10: EM Cmap example with number of concepts (NC) identification. | Figure 11: Number of categories (NCAT) identification. | Figure 12: Number of interlinks (NIL) identification. |
-
-Figure 10 shows an example of a concept map with 9 concepts. After listing the concepts, they are categorized using a word bank (Figure 11) and finally interlinks are identified (Figure 12).
-For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
-
-### Categorical Scoring Method
-This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
-
-CO = NC*(NIL/NCAT)
-
-On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
+| Figure 8: EM Cmap example. | Figure 9: Number of categories (NCAT) identification. | Figure 10: Number of interlinks (NIL) identification. |
 
 ### 🔮 Manual Categorization GUI 
 
