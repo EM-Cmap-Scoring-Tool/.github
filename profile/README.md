@@ -44,10 +44,6 @@ After creating a concept map in CmapTools, the map should be exported as CXL (Fi
 
 ### :crystal_ball: Main Graphical User Interface
 
-| ![imagen](https://user-images.githubusercontent.com/74432387/252414649-71da88b1-9c81-4f96-a788-0f2138b8e537.png) |
-| :-: |
-| Figure 4: EM Cmap Scoring tool GUI UPDATE |
-
 |<img src="https://user-images.githubusercontent.com/74432387/252414649-71da88b1-9c81-4f96-a788-0f2138b8e537.png" width="1000" />|
 | :-: |
 | Figure 4: EM Cmap Scoring tool GUI UPDATE |
