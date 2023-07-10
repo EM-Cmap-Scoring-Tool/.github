@@ -112,10 +112,10 @@ To create a new Wordbank follow these steps:
 ### Populating the new WordBank file
 The new WordBank must have the following structure:
 - Each category (or subcategory) occupies one row:
-   -- In the first cell goes the number of the category
-   --	In the second cell goes the number of the subcategory. __If that row corresponds to a category the number must be the same as the first cell__
-   --	In the third cell goes the name of the category.
-   --	From the fourth cell onwards go the concepts in this category or subcategory (if there are no concepts in the category or subcategory these cells can be left blank). Each concept must occupy one cell, you can add as many concepts as Excel allows. Concepts can be composed of two words. Be aware that the Scoring tool will look for the exact match of the complete concept.  
+   - In the first cell goes the number of the category
+   - In the second cell goes the number of the subcategory. __If that row corresponds to a category the number must be the same as the first cell__
+   - In the third cell goes the name of the category.
+   - From the fourth cell onwards go the concepts in this category or subcategory (if there are no concepts in the category or subcategory these cells can be left blank). Each concept must occupy one cell, you can add as many concepts as Excel allows. Concepts can be composed of two words. Be aware that the Scoring tool will look for the exact match of the complete concept.  
 - The first row of the file has the headers of each column. In column A goes “Category”, column B “Subcategory”, column C “Name”, and column D “Words”. The Scoring tool ignores this first row of the WordBank, then don’t include a category in this row, just leave the headers.
 
 Figure 13 shows the structure of the WordBank that comes by default with the Scoring tool. This WordBank was created for Entrepreneurial Mindset concept maps. 
@@ -125,3 +125,4 @@ Figure 13 shows the structure of the WordBank that comes by default with the Sco
 | Figure 13: WordBank structure|
 
 ## :orange_book: Including a New Codebook
+The Codebook can be changed by replacing the pdf file named “Codebook.pdf” in the same folder where the __Cmap_Scoring_Tool_Launcher__ application is. The new codebook must have the same file name “Codebook.pdf” but can have different content. 
