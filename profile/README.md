@@ -57,7 +57,7 @@ After lauching the EM Camp Scoring Tool, a main GUI is displayed (Figure 4) with
 
 ### :bar_chart: Scoring Methods 
 
-### Traditional Scoring MEthod
+### Traditional Scoring Method
 This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of crosslinks (NCL) between concepts.
 NC is the number of concepts that have connections with other concepts in the map; NH are the number of branches (hierarchies) that come from the root concept; HH is the hierarchy (branch) with the largest number of concepts; and NCL are the number of connections between concepts from different hierarchies.
 The formula to get the score based on these metrics is: Score = (NC) + 5*(HH) + 10*(NCL)
@@ -68,9 +68,7 @@ Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the iden
 | :-: | :-: | :-: |
 | Figure 5: EM Cmap example with number of concepts (NC) identification. | Figure 6: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 7: Number of crosslinks (NCL) identification. |
 
-
-
-### Categorical
+### Categorical Scoring Method
 The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_2/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229618016-94668494-1f69-418b-9535-5520c98fda32.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618225-0650527c-9952-4f7c-af26-fb7dd75c95c5.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229618261-4721051f-92f2-4f9b-9fdc-54e18428638a.png) |
@@ -80,6 +78,13 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 Figure 10 shows an example of a concept map with 9 concepts. After listing the concepts, they are categorized using a word bank (Figure 11) and finally interlinks are identified (Figure 12).
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
 
+### Categorical Scoring Method
+This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
+
+CO = NC*(NIL/NCAT)
+
+On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
+
 ### 🔮 Manual Categorization GUI 
 
 When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 5). 
@@ -88,14 +93,12 @@ When the Categorical Method is selected, the Scoring Tool will display a new win
 | :-: |
 | Figure 5: Manual Categorization GUI dropdown menu update |
 
+To accept the preassigned or new category, the radio button must remain in “Accept all assignments” and the user must press “Continue” (Figure xxxx).
+The user can also select “Reject all assignments and leave all concepts [that were not found in the Wordbank] in No category”. In this case, those concepts will not count for the Score.   
 
-
-### Categorical Scoring Method
-This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
-
-CO = NC*(NIL/NCAT)
-
-On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
+|![image](https://user-images.githubusercontent.com/74432387/252420985-c84d36d8-6e3e-480f-ae1a-00096d6246e8.png)|
+| :-: |
+| Figure xxxx: Accept or Reject categories for concepts not found in the Wordbank |
 
 ## :floppy_disk: Creating a New WordBank
 
