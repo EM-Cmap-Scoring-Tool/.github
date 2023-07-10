@@ -31,10 +31,6 @@ The EM Cmap Scoring Tool is a desktop application developed to automatically ass
 | :-: |
 | Figure 2: Launch program |
 
-|<img src="https://user-images.githubusercontent.com/74432387/252414286-d4566db1-8365-40d9-adc7-01254f520460.png" width="200" />|
-| :-: |
-| Figure 2: Launch program |
-
 - If Windows alerts you because of the application being unknown, please click on *Run anyway* or *More information* and then *Run anyway*
 
 | <img src="https://user-images.githubusercontent.com/78668372/229847812-d8e15832-8819-401c-af6d-07d6c938bb0a.png" width=50% height=60%> |
@@ -49,6 +45,10 @@ After creating a concept map in CmapTools, the map should be exported as CXL (Fi
 ### :crystal_ball: Main Graphical User Interface
 
 | ![imagen](https://user-images.githubusercontent.com/74432387/252414649-71da88b1-9c81-4f96-a788-0f2138b8e537.png) |
+| :-: |
+| Figure 4: EM Cmap Scoring tool GUI UPDATE |
+
+|<img src="https://user-images.githubusercontent.com/74432387/252414649-71da88b1-9c81-4f96-a788-0f2138b8e537.png" width="500" />|
 | :-: |
 | Figure 4: EM Cmap Scoring tool GUI UPDATE |
 
