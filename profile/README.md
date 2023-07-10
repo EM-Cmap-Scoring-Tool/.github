@@ -6,9 +6,10 @@ The EM-Cmap-Scoring-Tool is a desktop application developed to automatically ass
 
 ##### Table of contents:
 [Installing EM Cmap Scoring Tool](#Installing-EM-Cmap-Scoring-Tool)  
+[Graphical User Interface](#Main-Graphical-User-Interface)
 
 
-[TOC]
+
 
 ## :wrench: Installing EM Cmap Scoring Tool
 - Please go over and click the [**EM_Cmap_Scoring_Tool_Launcher.zip**](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_5/EM_Cmap_Scoring_Tool_Launcher.zip) at the top of this page, then clik on the *Download* option on the right side of the screen.
@@ -31,7 +32,7 @@ The EM-Cmap-Scoring-Tool is a desktop application developed to automatically ass
 | :-: |
 | Figure 3: Protection window |
 
-## :crystal_ball: Graphical User Interface (GUI) UPDATE
+## :crystal_ball: Main Graphical User Interface
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/245651333-1d85aebc-c658-4ef8-b2c7-63a9037726f5.png) |
 | :-: |
