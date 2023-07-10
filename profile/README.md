@@ -32,7 +32,9 @@ The EM Cmap Scoring Tool is a desktop application developed to automatically ass
 | :-: |
 | Figure 3: Protection window |
 
-## :crystal_ball: Main Graphical User Interface
+## :book: User's Manual
+
+### :crystal_ball: Main Graphical User Interface
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/245651333-1d85aebc-c658-4ef8-b2c7-63a9037726f5.png) |
 | :-: |
@@ -47,7 +49,7 @@ The main GUI of the tool has the following elements:
 5. *Help* button that opens a window to explain how to prepare the Cmaps files and how to use the Scoring Tool.
 6. *Run* button to execute the scoring.
 
-## 🔮 Manual Categorization GUI UPDATE
+### 🔮 Manual Categorization GUI 
 Additional elements were added to the program that help the user to identify the categories and subcategories in the Manual Categorization GUI. 
 
 Categories were left in the same level and subcategories are presented with a tab and a '-' at the start, as can be seen in Figure 5.
@@ -56,17 +58,18 @@ Categories were left in the same level and subcategories are presented with a ta
 | :-: |
 | Figure 5: Manual Categorization GUI dropdown menu update |
 
-# 📚 Theoretical Framework
+## 📚 Theoretical Framework
 ![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
 
 Figure 6: Cmap example[1]
-## Traditional Scoring Method
+
+### Traditional Scoring Method
 This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL) between concepts.
 
 As seen in Figure 6, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
 
 Score = (NC) + 5*(HH) + 10*(NCL)
-## Categorical Scoring Method
+### Categorical Scoring Method
 This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
 
 CO = NC*(NIL/NCAT)
