@@ -89,7 +89,7 @@ On Figure 6, each concept would be assigned a number depending on the category f
 
 When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 5). 
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/245650502-b4fe9877-406d-4909-8f53-5d93dfcc1b3f.png) |
+| ![image](https://user-images.githubusercontent.com/74432387/252460986-5ce64957-6e1c-4ba5-acbe-9cec378855d0.png) |
 | :-: |
 | Figure 5: Manual Categorization GUI dropdown menu update |
 
