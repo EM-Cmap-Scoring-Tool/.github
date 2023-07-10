@@ -62,7 +62,7 @@ This method assigns a score based on the number of concepts (NC), the number of 
 NC is the number of concepts that have connections with other concepts in the map; NH are the number of branches (hierarchies) that come from the root concept; HH is the hierarchy (branch) with the largest number of concepts; and NCL are the number of connections between concepts from different hierarchies.
 The formula to get the score based on these metrics is: Score = (NC) + 5*(HH) + 10*(NCL)
 
-Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the identification of the diffrent hierarchies and the highest hierarchy (HH). Figure 7 highlights the crosslink in this concept map. For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
+Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the identification of the different hierarchies and the highest hierarchy (HH). Figure 7 highlights the crosslink in this concept map. For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229846688-053cee04-0534-417b-a71f-7421fccae00b.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229847229-deb70aed-940f-49b2-89c1-6a0e4ce86f47.png)    | ![imagen](https://user-images.githubusercontent.com/78668372/229847398-aec3cc25-ae7f-4eb0-b5ba-2de266ecda3a.png) |
 | :-: | :-: | :-: |
