@@ -16,7 +16,7 @@ Repository containing the distribution version of the EM Cmap Scoring Tool
 | :-: |
 | Figure 2: Launch program |
 
-- If Windows alerts you because of the application beign unknown, please click on *Run anyway* or *More information* and then *Run anyway*
+- If Windows alerts you because of the application being unknown, please click on *Run anyway* or *More information* and then *Run anyway*
 
 | <img src="https://user-images.githubusercontent.com/78668372/229847812-d8e15832-8819-401c-af6d-07d6c938bb0a.png" width=50% height=60%> |
 | :-: |
