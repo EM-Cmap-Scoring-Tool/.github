@@ -6,7 +6,7 @@ The EM-Cmap-Scoring-Tool is a desktop application developed to automatically ass
 
 ##### Table of contents:
 [Installing EM Cmap Scoring Tool](#installing-em-cmap-scoring-tool)  
-[Graphical User Interface](#main-graphical-user-interface)
+[Graphical User Interface](#crystal_ball-main-graphical-user-interface)
 
 
 
