@@ -92,8 +92,32 @@ The user can also select “Reject all assignments and leave all concepts [that 
 
 |![image](https://user-images.githubusercontent.com/74432387/252420985-c84d36d8-6e3e-480f-ae1a-00096d6246e8.png)|
 | :-: |
-| Figure12: Accept or Reject categories for concepts not found in the Wordbank |
+| Figure 12: Accept or Reject categories for concepts not found in the Wordbank |
 
 ## :floppy_disk: Creating a New WordBank
+
+The Wordbank can be changed by replacing the csv file name “WordBank.csv” in the same folder where the __Cmap_Scoring_Tool_Launcher__ application is. The new Wordbank must have the same file name “WordBank.csv” and the content must comply with some rules that are explained below.
+
+### Creating a new Worbank file
+To create a new Wordbank follow these steps:
+1.	Open Excel and create a new blank workbook.
+2.	Select __File -> Save As__
+3.	Under the file name write __WordBank__  (be aware of the capitalized B).
+4.	Under filetype select CSV UTF-8
+5.	Press __Save__
+
+### Populating the new WordBank file
+The new WordBank must have the following structure:
+•	Each category (or subcategory) occupies one row:
+   o	In the first cell goes the number of the category
+   o	In the second cell goes the number of the subcategory. __If that row corresponds to a category the number must be the same as the first cell__
+   o	In the third cell goes the name of the category.
+   o	From the fourth cell onwards go the concepts in this category or subcategory (if there are no concepts in the category or subcategory these cells can be left blank). Each concept must occupy one cell, you can add as many concepts as Excel allows. Concepts can be composed of two words. Be aware that the Scoring tool will look for the exact match of the complete concept.  
+•	The first row of the file has the headers of each column. In column A goes “Category”, column B “Subcategory”, column C “Name”, and column D “Words”. The Scoring tool ignores this first row of the WordBank, then don’t include a category in this row, just leave the headers.
+
+Figure 13 shows the structure of the WordBank that comes by default with the Scoring tool. This WordBank was created for Entrepreneurial Mindset concept maps. 
+
+
+
 
 ## :orange_book: Including a New Codebook
