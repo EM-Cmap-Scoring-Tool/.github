@@ -24,7 +24,7 @@ The EM Cmap Scoring Tool is a desktop application developed to automatically ass
 
 - Open the resulting folder after the extraction and double click on the **Cmap_Scoring_Tool_Launcher** application file to run the program (Figure 2).
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/230093790-764e3e18-1c3c-4f5b-88ff-1b8e95e21c47.png) |
+| ![imagen](https://user-images.githubusercontent.com/74432387/252414286-d4566db1-8365-40d9-adc7-01254f520460.png) |
 | :-: |
 | Figure 2: Launch program |
 
