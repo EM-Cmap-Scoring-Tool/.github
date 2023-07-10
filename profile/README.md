@@ -81,18 +81,18 @@ Figure 8 shows an example of a concept map with 9 concepts. Figure 9 shows the c
 
 ### 🔮 Manual Categorization GUI 
 
-When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 5). 
+When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 11). 
 
 | ![image](https://user-images.githubusercontent.com/74432387/252460986-5ce64957-6e1c-4ba5-acbe-9cec378855d0.png) |
 | :-: |
-| Figure 5: Manual Categorization GUI dropdown menu update |
+| Figure 11: Manual Categorization GUI dropdown menu update |
 
-To accept the preassigned or new category, the radio button must remain in “Accept all assignments” and the user must press “Continue” (Figure xxxx).
+To accept the preassigned or new category, the radio button must remain in “Accept all assignments” and the user must press “Continue” (Figure 12).
 The user can also select “Reject all assignments and leave all concepts [that were not found in the Wordbank] in No category”. In this case, those concepts will not count for the Score.   
 
 |![image](https://user-images.githubusercontent.com/74432387/252420985-c84d36d8-6e3e-480f-ae1a-00096d6246e8.png)|
 | :-: |
-| Figure xxxx: Accept or Reject categories for concepts not found in the Wordbank |
+| Figure12: Accept or Reject categories for concepts not found in the Wordbank |
 
 ## :floppy_disk: Creating a New WordBank
 
