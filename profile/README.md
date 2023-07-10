@@ -101,7 +101,7 @@ CO = NC*(NIL/NCAT)
 
 On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
 
-## :floppy_disk: Creating a new WordBank
+## :floppy_disk: Creating a New WordBank
 
 ## :orange_book: Including a New Codebook
 
