@@ -6,7 +6,10 @@ The EM Cmap Scoring Tool is a desktop application developed to automatically ass
 
 ### Table of contents:
 [Installing EM Cmap Scoring Tool](#wrench-installing-em-cmap-scoring-tool)  
-[Graphical User Interface](#crystal_ball-main-graphical-user-interface)
+[User's Manual](#book)
+[Creating a New WordBank](#book)
+[Including a New Codebook](#book)
+
 
 
 
@@ -58,24 +61,6 @@ Categories were left in the same level and subcategories are presented with a ta
 | :-: |
 | Figure 5: Manual Categorization GUI dropdown menu update |
 
-## 📚 Theoretical Framework
-![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
-
-Figure 6: Cmap example[1]
-
-### Traditional Scoring Method
-This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL) between concepts.
-
-As seen in Figure 6, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
-
-Score = (NC) + 5*(HH) + 10*(NCL)
-### Categorical Scoring Method
-This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
-
-CO = NC*(NIL/NCAT)
-
-On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
-
 ## :bar_chart: Scoring Methods 
 The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two lists to be used for scoring calculation.
 ### Traditional
@@ -99,5 +84,28 @@ Figure 10 shows an example of a concept map with 9 concepts. After listing the c
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
 
 
-# 📑 References
+### 📚 Theoretical Framework
+![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
+
+Figure 6: Cmap example[1]
+
+### Traditional Scoring Method
+This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL) between concepts.
+
+As seen in Figure 6, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
+
+Score = (NC) + 5*(HH) + 10*(NCL)
+### Categorical Scoring Method
+This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
+
+CO = NC*(NIL/NCAT)
+
+On Figure 6, each concept would be assigned a number depending on the category for the NC and NCAT calculation, and them the connection between **Foundations** and **Floor** would be checked to see if the two concepts are from different categories.
+
+## :floppy_disk: Creating a new WordBank
+
+## :orange_book: Including a New Codebook
+
+
+## 📑 References
 1. Watson MK, Barrella E, Pelkey J. Assessment of conceptual knowledge using a component-based concept map scoring program. The International journal of engineering education. 2018;34(3):1025-1037.
