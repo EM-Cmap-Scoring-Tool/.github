@@ -35,42 +35,40 @@ The EM Cmap Scoring Tool is a desktop application developed to automatically ass
 | Figure 3: Protection window |
 
 ## :book: User's Manual
+### :mailbox_with_mail: Input Files Type
+The EM Cmap Scoring tool was designed to read CXL files exported from CmapTools (https://cmap.ihmc.us/), a free software to create concept maps. 
+After creating a concept map in CmapTools, the map should be exported as CXL (File -> Export Cmap As -> CXL File...)
 
 ### :crystal_ball: Main Graphical User Interface
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/245651333-1d85aebc-c658-4ef8-b2c7-63a9037726f5.png) |
+| ![imagen](https://user-images.githubusercontent.com/74432387/252414649-71da88b1-9c81-4f96-a788-0f2138b8e537.png) |
 | :-: |
 | Figure 4: EM Cmap Scoring tool GUI UPDATE |
 
-The main GUI of the tool has the following elements:  
+After lauching the EM Camp Scoring Tool, a main GUI is displayed (Figure 4) with the following elements:  
 
-1. Text box to write the root concept.
-2. *Browse* button to select the Cmap files for scoring.
-3. *Browse* button to select the path where scoring report will be saved.
-4. Scoring method selection
+1. Radio button to select the Scoring method. You can choose either "Traditional" or "Categorical" 
+2. Text box to write the root concept
+3. *Browse* button to select the .cxl files to score.
+4. *Browse* button to select the path and filename for the Results Report.
 5. *Help* button that opens a window to explain how to prepare the Cmaps files and how to use the Scoring Tool.
-6. *Run* button to execute the scoring.
+6. *Codebook* nutton to open a PDF with the descrition of the Categories in the WordBank for the Categorical Method
+7. *Run* button to execute the scoring.
 
-### 🔮 Manual Categorization GUI 
-Additional elements were added to the program that help the user to identify the categories and subcategories in the Manual Categorization GUI. 
+### :bar_chart: Scoring Methods 
 
-Categories were left in the same level and subcategories are presented with a tab and a '-' at the start, as can be seen in Figure 5.
+### Traditional Scoring MEthod
+This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of crosslinks (NCL) between concepts.
+NC is the number of concepts that have connections with other concepts in the map; NH are the number of branches (hierarchies) that come from the root concept; HH is the hierarchy (branch) with the largest number of concepts; and NCL are the number of connections between concepts from different hierarchies.
+The formula to get the score based on these metrics is: Score = (NC) + 5*(HH) + 10*(NCL)
 
-| ![imagen](https://user-images.githubusercontent.com/78668372/245650502-b4fe9877-406d-4909-8f53-5d93dfcc1b3f.png) |
-| :-: |
-| Figure 5: Manual Categorization GUI dropdown menu update |
-
-## :bar_chart: Scoring Methods 
-The program receives the Cmap files as a .cxl extention that contains the different concepts listed and the connections between them. The extraction algorithm takes all the concepts and concepts linked pairs and stores them as two lists to be used for scoring calculation.
-### Traditional
-The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of hierarchies (NH) is obtained by identifying the concepts that are connected directly to the root conept. The highest hierarchy (HH) corresponds to the hierarchy with the longest level. Lastly, the number of cross links (NCL) is obtained by counting the connections between paired concepts that are from different hierarchies.
+Figure 5 shows an example a concept map with 9 concepts. Figure 6 shows the identification of the diffrent hierarchies and the highest hierarchy (HH). Figure 7 highlights the crosslink in this concept map. For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
 
 | ![imagen](https://user-images.githubusercontent.com/78668372/229846688-053cee04-0534-417b-a71f-7421fccae00b.png) | ![imagen](https://user-images.githubusercontent.com/78668372/229847229-deb70aed-940f-49b2-89c1-6a0e4ce86f47.png)    | ![imagen](https://user-images.githubusercontent.com/78668372/229847398-aec3cc25-ae7f-4eb0-b5ba-2de266ecda3a.png) |
 | :-: | :-: | :-: |
-| Figure 7: EM Cmap example with number of concepts (NC) identification. | Figure 8: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 9: Number of crosslinks (NCL) identification. |
+| Figure 5: EM Cmap example with number of concepts (NC) identification. | Figure 6: Number of hierarchies (NH) and highest hierarcy (HH) identification. | Figure 7: Number of crosslinks (NCL) identification. |
 
-Figure 7 shows an example of a concept map with 9 concepts. After listing them, hierarchies and its concepts are identifyed (Figure 8). The subindex after the dot serves here to illustrate the level of each hierarchy and hence, the longest one. Finally crosslinks are identified (Figure 9).
-For this example, the NC will correspond to 9, NH is 3, the HH will be hierarchy 2 with 3 levels, and NCL value corresponds to 1.
+
 
 ### Categorical
 The number of concepts (NC) is obtained by counting all the concepts, excluding the root concept, present in the Cmap. The number of categories (NCAT) is obtained by classifying the concepts present into each of the categories and counting the ones that contain at least one concept. For the case of Entrepreneurial Mindset (EM), the cateogries were defined by the [Word Bank](https://github.com/RMejiaE/EM-Cmap-Scoring-Tool/blob/main/Phase_2/WordBank.csv) developed by the research team members. Lastly, the number of interlinks (NIL) is obtained by counting the connections between paired concepts that are from different categories.
@@ -82,18 +80,16 @@ The number of concepts (NC) is obtained by counting all the concepts, excluding 
 Figure 10 shows an example of a concept map with 9 concepts. After listing the concepts, they are categorized using a word bank (Figure 11) and finally interlinks are identified (Figure 12).
 For this example, the NC will correspond to 9, NCAT will be 3, and NIL value corresponds to 2.
 
+### 🔮 Manual Categorization GUI 
 
-### 📚 Theoretical Framework
-![imagen](https://user-images.githubusercontent.com/78668372/222168066-8f58282b-3591-43e3-a3ed-1d50a78556a4.png)
+When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 5). 
 
-Figure 6: Cmap example[1]
+| ![imagen](https://user-images.githubusercontent.com/78668372/245650502-b4fe9877-406d-4909-8f53-5d93dfcc1b3f.png) |
+| :-: |
+| Figure 5: Manual Categorization GUI dropdown menu update |
 
-### Traditional Scoring Method
-This method assigns a score based on the number of concepts (NC), the number of hierarchies (NH), the highest hierarchy (HH), and the number of cross links (NCL) between concepts.
 
-As seen in Figure 6, the NC is the ammount of bubbles, the NH are the different paths that leave the root concept, the HH is the hierarchy containing most concepts, and the NCL are the connections between concepts of different hierarchies.
 
-Score = (NC) + 5*(HH) + 10*(NCL)
 ### Categorical Scoring Method
 This method identifies the number of concepts (NC) present in the Cmap, then classifies the concepts into categories, and lastly, it calculates the number of concepts in each category to finally compute the number of categories (NCAT) that contain at least one concept. After that, it calculates the number of  connections between concepts of different categories, better known as interlinks (NIL). The score is meassure by the level of complexity (CO) of the Cmap.
 
@@ -104,7 +100,3 @@ On Figure 6, each concept would be assigned a number depending on the category f
 ## :floppy_disk: Creating a New WordBank
 
 ## :orange_book: Including a New Codebook
-
-
-## 📑 References
-1. Watson MK, Barrella E, Pelkey J. Assessment of conceptual knowledge using a component-based concept map scoring program. The International journal of engineering education. 2018;34(3):1025-1037.
