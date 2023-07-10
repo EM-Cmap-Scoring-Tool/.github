@@ -5,8 +5,8 @@
 The EM-Cmap-Scoring-Tool is a desktop application developed to automatically assess Concept Maps using Traditional and Categorical Scoring Methods. By default the tool was developed to assess Entrepreneurial Mindset Concept Maps, however, by changing the Wordbank default file, it can be used to assess Concept Maps from other subjects. To do so, please refer to the section "Creating a new WordBank"
 
 ##### Table of contents:
-[Installing EM Cmap Scoring Tool](#Installing-EM-Cmap-Scoring-Tool)  
-[Graphical User Interface](#Main-Graphical-User-Interface)
+[Installing EM Cmap Scoring Tool](#installing-em-cmap-scoring-tool)  
+[Graphical User Interface](#main-graphical-user-interface)
 
 
 
