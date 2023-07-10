@@ -28,7 +28,7 @@ Repository containing the distribution version of the EM Cmap Scoring Tool
 | :-: |
 | Figure 4: EM Cmap Scoring tool GUI UPDATE |
 
-Figure 4 shows the GUI, it elements are described below: 
+The main GUI of the tool has the following elements:  
 
 1. Text box to write the root concept.
 2. *Browse* button to select the Cmap files for scoring.
