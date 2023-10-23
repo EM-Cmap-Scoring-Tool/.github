@@ -92,7 +92,7 @@ Figure 8 shows an example of a concept map with 9 concepts. Figure 9 shows the c
 | :-: | :-: | :-: |
 | Figure 8: EM Cmap example. | Figure 9: Number of categories (NCAT) identification. | Figure 10: Number of interlinks (NIL) identification. |
 
-### 🔮 Manual Categorization GUI 
+### 🔮 Manual Categorization GUI
 
 When the Categorical Method is selected, the Scoring Tool will display a new window “Manual Concept Categorization” with the concepts in the Concept Map that were not found in the Wordbank file. The scoring tool will pre-assign these concepts to the category of the higher concept in their hierarchy. In the “Manual concept Categorization” window the user can leave the preassigned category or select a different category from a scrolling menu (Figure 11). 
 
