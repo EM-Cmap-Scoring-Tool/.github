@@ -2,9 +2,9 @@
 
 ## :shipit: Overview
 
-The EM Cmap Scoring Tool is a desktop application developed to automatically assess Concept Maps using Traditional and Categorical Scoring Methods. By default the tool was developed to assess Entrepreneurial Mindset Concept Maps however, by changing the Wordbank default file it can be used to assess Concept Maps from other subjects. To do so, please refer to the section "Creating a New WordBank"
-
 The EM Cmap Scoring Tool is part of a larger concept map project funded by the Kern Family Foundation through the Kern Entrepreneurial Engineering Network (KEEN). As part of this larger project, the research team has developed a suite of resources for faculty interested in employing concept maps within their courses. These resources, which include videos, assignment templates, and scoring examples, can be found at the EM Concept Map [Toolkit website](https://sites.google.com/dforxconsulting.com/emcmaptoolkit/home) or on the [KEEN Card](https://engineeringunleashed.com/card/3450).
+
+This tool is a desktop application developed to automatically assess Concept Maps using Traditional and Categorical Scoring Methods. By default the tool was developed to assess Entrepreneurial Mindset Concept Maps however, by changing the Wordbank default file it can be used to assess Concept Maps from other subjects. To do so, please refer to the section "Creating a New WordBank"
 
 #### Citation:
 
