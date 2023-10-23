@@ -6,11 +6,13 @@ The EM Cmap Scoring Tool is part of a larger concept map project funded by the K
 
 This tool is a desktop application developed to automatically assess Concept Maps using Traditional and Categorical Scoring Methods. By default the tool was developed to assess Entrepreneurial Mindset Concept Maps however, by changing the Wordbank default file it can be used to assess Concept Maps from other subjects. To do so, please refer to the section "Creating a New WordBank"
 
-#### Citation:
+The traditional scoring method use in this tool, is based on Cmap Parse (Pelkey, 2016). Details about the development of Cmap Parse can be consulted in Watson et al. (2018).
 
+#### Citation
+If you want to cite this work, please use the following citation:
 - Barrella, E., Bodnar, C.A., Cano Morales, M.L., Carnasciali, M.I., Cruz, J., Dillon, H.E., Kecskemety, K., Jackson, A.M., Miskioglu, E., Rodríguez Mejía, E. (2023). EM Concept Map Toolkit. Licensed under CC BY-NC-SA
 
-### Table of contents:
+### Table of contents
 [Installing EM Cmap Scoring Tool](#wrench-installing-em-cmap-scoring-tool)
 
 [User's Manual](#book-users-manual)
@@ -134,3 +136,7 @@ Figure 13 shows the structure of the WordBank that comes by default with the Sco
 
 ## :orange_book: Including a New Codebook
 The Codebook can be changed by replacing the pdf file named “Codebook.pdf” in the same folder where the __Cmap_Scoring_Tool_Launcher__ application is. The new codebook must have the same file name “Codebook.pdf” but can have different content. 
+
+# 📑 References
+- J. Pelkey, Cmap-Parse, GitHub, 2016, https://github.com/joshpelkey/cmap-parse
+- Watson, M.K., Barrella, E.M., & Pelkey, J. (2018). Assessment of conceptual knowledge using a component-based concept map scoring program. International Journal of Engineering Education, 34, 1025-1037.
